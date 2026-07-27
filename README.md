@@ -33,7 +33,6 @@ CrossAgeKinship_Final_Repo/
 │   ├── explainability/
 │   ├── graphs/
 │   └── metrics/
-├── sample_inputs/        # Example images for testing (optional)
 ├── src/
 │   ├── deploy/           # Deployment pipeline
 │   └── Official training, evaluation and model scripts
@@ -55,8 +54,8 @@ The original FIW facial images are **not distributed** due to dataset licensing 
 Clone the repository:
 
 ```bash
-git clone <repository_url>
-cd CrossAgeKinship_Final_Repo
+git clone https://github.com/Prakshi18-02/Explainable-Cross-Age-Kinship-Identification.git
+cd Explainable-Cross-Age-Kinship-Identification
 ```
 
 Install the required dependencies:
@@ -93,6 +92,15 @@ Relationship Classification
 ```bash
 python src/evaluate_relationship_models_fixed.py
 ```
+Before running binary verification evaluation, generate the required embedding files:
+
+```bash
+python src/create_face_embeddings.py
+python src/create_region_embeddings.py
+```
+
+These scripts generate `data/face_embeddings.pkl` and `data/region_embeddings.pkl`.
+
 
 Binary Verification
 
@@ -154,7 +162,8 @@ Additional evaluation results, graphs, confusion matrices, and explainability vi
 This repository includes:
 
 - Official implementation of the proposed framework
-- Training scripts
+- Model architecture definitions
+- Embedding-generation scripts
 - Evaluation scripts
 - Deployment pipeline
 - Frozen model checkpoints
