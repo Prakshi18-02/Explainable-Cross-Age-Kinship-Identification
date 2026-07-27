@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-score
+Binary_Fusion,68.97,65.64,81.99,72.91
+Triplet_Model,66.13,63.96,75.62,69.3
+Fusion_Triplet_Model,67.51,62.68,89.47,73.72

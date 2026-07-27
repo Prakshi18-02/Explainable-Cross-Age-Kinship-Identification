@@ -1,0 +1,14 @@
+Model: Binary_Fusion
+Accuracy : 68.97%
+Precision: 65.64%
+Recall   : 81.99%
+F1-score : 72.91%
+
+              precision    recall  f1-score   support
+
+     Not Kin       0.75      0.55      0.64      1547
+         Kin       0.66      0.82      0.73      1605
+
+    accuracy                           0.69      3152
+   macro avg       0.70      0.69      0.68      3152
+weighted avg       0.70      0.69      0.68      3152

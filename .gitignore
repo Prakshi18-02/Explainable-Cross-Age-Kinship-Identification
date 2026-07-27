@@ -1,0 +1,38 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+kinship_env/
+venv/
+.env/
+
+# Restricted FIW dataset
+data/FIW/
+data/Track1/
+
+# Temporary files
+temp_uploads/
+outputs/
+final_outputs/
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Old or experimental checkpoints
+baseline_embedding_model.pth
+best_model.pth
+hereditary_embedding_model.pth
+hereditary_embedding_model_v2.pth
+best_relation_fusion.pth
+
+
+# Generated embedding files
+data/face_embeddings.pkl
+data/region_embeddings.pkl

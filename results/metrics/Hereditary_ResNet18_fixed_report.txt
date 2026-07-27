@@ -1,0 +1,16 @@
+Model: Hereditary_ResNet18
+Accuracy : 90.70%
+Precision: 90.78%
+Recall   : 90.70%
+F1-score : 90.71%
+
+                 precision    recall  f1-score   support
+
+     Father-Son       0.94      0.89      0.91       107
+Father-Daughter       0.90      0.91      0.90       106
+     Mother-Son       0.92      0.92      0.92       107
+Mother-Daughter       0.88      0.92      0.90       110
+
+       accuracy                           0.91       430
+      macro avg       0.91      0.91      0.91       430
+   weighted avg       0.91      0.91      0.91       430
